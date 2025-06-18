@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="project_controller.ClienteListaController"
+            prefWidth="600" prefHeight="400">
+
+    <top>
+        <Label text="Lista de Clientes"
+               BorderPane.alignment="CENTER"
+               style="-fx-font-size: 20px; -fx-padding: 10px; -fx-font-weight: bold;" />
+    </top>
+
+    <center>
+        <TableView fx:id="tabelaClientes" prefHeight="300">
+            <columns>
+            	<TableColumn fx:id="colId" text="ID" />
+                <TableColumn fx:id="colNome" text="Nome" />
+                <TableColumn fx:id="colTelefone" text="Telefone" />
+                <TableColumn fx:id="colEmail" text="E-mail" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <Button text="Fechar" onAction="#fechar" BorderPane.alignment="CENTER"
+                style="-fx-background-color: darkred; -fx-text-fill: white;" />
+    </bottom>
+</BorderPane>

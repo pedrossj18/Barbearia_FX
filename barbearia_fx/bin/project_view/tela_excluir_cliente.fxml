@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="450" prefWidth="600" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_controller.ClienteExcluirController">
+
+    <top>
+        <Label style="-fx-font-size: 18px; -fx-padding: 10px; -fx-font-weight: bold;" text="Pesquisa para Exclusão de Cliente" BorderPane.alignment="CENTER" />
+    </top>
+
+    <bottom>
+        <Button onAction="#voltar" style="-fx-background-color: darkred; -fx-text-fill: white;" text="Voltar" BorderPane.alignment="CENTER" />
+    </bottom>
+
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="339.0" prefWidth="600.0" spacing="15" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+
+            <ImageView fitHeight="119.0" fitWidth="124.0" pickOnBounds="true" smooth="false">
+                <image>
+                    <Image url="@exclusao.png" />
+                </image>
+            </ImageView>
+
+            <Label alignment="TOP_LEFT" contentDisplay="RIGHT" prefHeight="18.0" prefWidth="558.0" text="ID do Cliente:           ">
+                <graphic>
+                    <TextField fx:id="txtIdCliente" prefHeight="25.0" prefWidth="425.0" promptText="ID do cliente a excluir" />
+                </graphic>
+            </Label>
+
+            <Label contentDisplay="RIGHT" prefHeight="25.0" prefWidth="579.0" text="Nome do Cliente:     ">
+                <graphic>
+                    <TextField fx:id="txtNomeCliente" prefHeight="25.0" prefWidth="425.0" promptText="Nome do cliente a excluir" />
+                </graphic>
+            </Label>
+
+            <Label alignment="TOP_LEFT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="586.0" text="Telefone do Cliente: ">
+                <graphic>
+                    <TextField fx:id="txtTelefoneCliente" prefHeight="25.0" prefWidth="426.0" promptText="Telefone do cliente a excluir" />
+                </graphic>
+            </Label>
+
+            <Button onAction="#excluirCliente" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: grey; -fx-text-fill: white;" text="Pesquisar" />
+        </VBox>
+    </left>
+</BorderPane>

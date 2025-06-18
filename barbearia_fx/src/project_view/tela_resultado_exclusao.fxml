@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="project_controller.ResultadoExclusaoController"
+            prefWidth="600" prefHeight="400">
+
+    <top>
+        <Label text="Lista de Clientes Encontrados"
+               BorderPane.alignment="CENTER"
+               style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-padding: 10px;" />
+    </top>
+
+    <center>
+        <TableView fx:id="tabelaClientes" prefHeight="250">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+                <TableColumn fx:id="colNome" text="Nome" prefWidth="180"/>
+                <TableColumn fx:id="colTelefone" text="Telefone" prefWidth="140"/>
+                <TableColumn fx:id="colEmail" text="E-mail" prefWidth="200"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="20" alignment="CENTER" BorderPane.alignment="CENTER">
+            <padding><Insets top="10" bottom="10" /></padding>
+            <Button text="Excluir" onAction="#excluirSelecionado"
+                    style="-fx-background-color: red; -fx-text-fill: white;" />
+            <Button text="Voltar" onAction="#voltar"
+                    style="-fx-background-color: gray; -fx-text-fill: white;" />
+        </HBox>
+    </bottom>
+</BorderPane>

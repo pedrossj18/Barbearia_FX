@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_controller.ListarAgendamentosController" prefWidth="900" prefHeight="600">
+
+    <top>
+        <Label text="Lista de Agendamentos" BorderPane.alignment="CENTER"
+               style="-fx-font-size: 18px; -fx-padding: 10px; -fx-font-weight: bold;" />
+    </top>
+
+    <center>
+        <TableView fx:id="tabelaAgendamentos" prefHeight="500">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="50" />
+                <TableColumn fx:id="colNomeCliente" text="Cliente" prefWidth="200" />
+                <TableColumn fx:id="colNomeBarbeiro" text="Barbeiro" prefWidth="200" />
+                <TableColumn fx:id="colData" text="Data e Hora" prefWidth="150" />
+                <TableColumn fx:id="colServico" text="Servico" prefWidth="150" />
+                <TableColumn fx:id="colObservacoes" text="Observações" prefWidth="150" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <Button text="Voltar" onAction="#voltar" BorderPane.alignment="CENTER"
+                style="-fx-background-color: darkred; -fx-text-fill: white; -fx-padding: 10px 20px;" />
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_controller.BarbeiroIncluirController">
+
+    <top>
+        <Label style="-fx-font-size: 18px; -fx-padding: 10px; -fx-font-weight: bold;" text="Incluir Novo Barbeiro" BorderPane.alignment="CENTER" />
+    </top>
+
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="10" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+
+            <ImageView disable="true" fitHeight="206.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@tesoura.png" />
+                </image>
+            </ImageView>
+
+            <Label contentDisplay="RIGHT" text="Nome:  ">
+                <graphic>
+                    <TextField fx:id="txtNome" prefHeight="25.0" prefWidth="639.0" promptText="Nome do barbeiro" />
+                </graphic>
+            </Label>
+
+            <Label contentDisplay="RIGHT" prefHeight="25.0" prefWidth="746.0" text="Especialidade:">
+                <graphic>
+                    <TextField fx:id="txtEspecialidade" prefHeight="25.0" prefWidth="640.0" promptText="Ex: Cortes modernos, Navalhado..." />
+                </graphic>
+            </Label>
+
+            <Label contentDisplay="RIGHT" text="Telefone:">
+                <graphic>
+                    <TextField fx:id="txtTelefone" prefHeight="25.0" prefWidth="641.0" promptText="Telefone do barbeiro" />
+                </graphic>
+            </Label>
+
+            <Button onAction="#salvarBarbeiro" prefHeight="36.0" prefWidth="128.0" style="-fx-background-color: grey; -fx-text-fill: white;" text="Salvar" />
+        </VBox>
+    </center>
+
+    <bottom>
+        <Button onAction="#voltar" style="-fx-background-color: darkred; -fx-text-fill: white;" text="Voltar" BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>

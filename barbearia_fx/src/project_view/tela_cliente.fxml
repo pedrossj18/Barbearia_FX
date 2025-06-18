@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="project_controller.ClienteController">
+
+    <children>
+        <VBox alignment="CENTER" spacing="15"
+              AnchorPane.topAnchor="50" AnchorPane.leftAnchor="100"
+              AnchorPane.rightAnchor="100" AnchorPane.bottomAnchor="50">
+            
+            <Label text="--- MENU CLIENTE ---"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+            <Button text="Incluir Cliente" onAction="#incluirCliente" prefWidth="300" />
+            <Button text="Excluir Cliente" onAction="#excluirCliente" prefWidth="300" />
+            <Button text="Listar Clientes" onAction="#listarClientes" prefWidth="300" />
+            <Button text="Pesquisa de Agendamentos" onAction="#pesquisarAgendamentos" prefWidth="300" />
+
+            <Button text="0 - Voltar ao Menu" onAction="#voltar" prefWidth="300"
+                    style="-fx-background-color: darkred; -fx-text-fill: white;" />
+        </VBox>
+    </children>
+</AnchorPane>

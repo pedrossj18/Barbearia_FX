@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_controller.MenuController">
+
+    <children>
+        <VBox alignment="CENTER" spacing="20" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="--- MENU PRINCIPAL ---" />
+
+            <Button onAction="#abrirAgendamento" prefWidth="200" text="Agendamento" />
+            <Button onAction="#abrirBarbeiro" prefWidth="200" text="Barbeiro" />
+            <Button onAction="#abrirCliente" prefWidth="200" text="Cliente" />
+            <Button onAction="#sair" prefWidth="200" style="-fx-background-color: darkred; -fx-text-fill: white;" text="0 - Sair" />
+        </VBox>
+    </children>
+</AnchorPane>
