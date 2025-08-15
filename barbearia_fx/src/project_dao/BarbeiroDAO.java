@@ -165,6 +165,7 @@ public class BarbeiroDAO {
                 Barbeiro barbeiro = new Barbeiro();
                 barbeiro.setId(rs.getInt("id"));
                 barbeiro.setNome(rs.getString("nome"));
+                barbeiro.setEspecialidade(rs.getString("especialidade"));
                 barbeiro.setTelefone(rs.getString("telefone"));
                 return barbeiro;
             }
@@ -188,10 +189,11 @@ public class BarbeiroDAO {
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
-            	Barbeiro barbeiro = new Barbeiro();
-            	barbeiro.setId(rs.getInt("id"));
-            	barbeiro.setNome(rs.getString("nome"));
-            	barbeiro.setTelefone(rs.getString("telefone"));
+                Barbeiro barbeiro = new Barbeiro();
+                barbeiro.setId(rs.getInt("id"));
+                barbeiro.setNome(rs.getString("nome"));
+                barbeiro.setEspecialidade(rs.getString("especialidade"));
+                barbeiro.setTelefone(rs.getString("telefone"));
                 lista.add(barbeiro);
             }
 
@@ -214,10 +216,11 @@ public class BarbeiroDAO {
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
-            	Barbeiro barbeiro = new Barbeiro();
-            	barbeiro.setId(rs.getInt("id"));
-            	barbeiro.setNome(rs.getString("nome"));
-            	barbeiro.setTelefone(rs.getString("telefone"));
+                Barbeiro barbeiro = new Barbeiro();
+                barbeiro.setId(rs.getInt("id"));
+                barbeiro.setNome(rs.getString("nome"));
+                barbeiro.setEspecialidade(rs.getString("especialidade"));
+                barbeiro.setTelefone(rs.getString("telefone"));
                 lista.add(barbeiro);
             }
 
